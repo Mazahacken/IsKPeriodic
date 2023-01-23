@@ -30,13 +30,13 @@ void computeLPS(string pat, int* lps)// Prefix function and lps array formation 
 }
 
 void IsKPeriodic(int K, const string& txt) 
-    if (K < 1) // checking the condition K > 0
+    if (K < 1)
     {
         cout << "K must be greater than 0" << endl;
     }
     else
     {
-        string pat; // form a substring by taking the initial characters of the string by the number Ê
+        string pat; 
         for (int i = 0; i < K; ++i)
             pat.push_back(txt[i]);
 
@@ -54,7 +54,7 @@ void IsKPeriodic(int K, const string& txt)
                 i++;
             }
             if (j == pat.size()) {
-                value++; // counting coincidences
+                value++; 
                 j = lps[j - 1];
             }
 
