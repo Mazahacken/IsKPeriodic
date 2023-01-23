@@ -29,8 +29,7 @@ void computeLPS(string pat, int* lps)// Prefix function and lps array formation 
     }
 }
 
-void IsKPeriodic(int K, const string& txt) // multiplicity check function based on the KMP algorithm
-{
+void IsKPeriodic(int K, const string& txt) 
     if (K < 1) // checking the condition K > 0
     {
         cout << "K must be greater than 0" << endl;
